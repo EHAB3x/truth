@@ -1,0 +1,30 @@
+{
+    "arabic": [{
+            "landing": [{
+                "title" : "مرحبا بك فى موقع TRUTH",
+                "titleDesc" : "هنا يمكنك اكتشاف الحقيقة الكاملة عن حرب فلسطين و اسرائيل",
+                "button" : "عرض مقالات اكتر",
+                "firstCardHead" : "من هو المحتل؟",
+                "firstCardDesc" : "يمكنك اكتشاف حقيقة من هو المحتل الرئيسى هنا",
+                "secondCardHead" : "من هو الارهابى؟",
+                "secondCardDesc" : "يمكنك اكتشاف حقيقة من هو الارهابى هنا",
+                "thirdCardHead" : "تاريخ الصراع الفلسطينى الاسرائيلى.",
+                "thirdCardDesc" : "هنا يمكنك اكتشاف تاريخ الصراع الفلسطينى الاسرائيلى"
+            }]          
+        }],
+    "english": [
+      {
+        "landing": [{
+                "title" : "Welcome To TRUTH Website",
+                "titleDesc" : "Here you can find the all truth about palestine & israel war",
+                "button" : "Show More Articles",
+                "firstCardHead" : "Who is the occupier?",
+                "firstCardDesc" : "You can find out the truth about who the main occupier is here",
+                "secondCardHead" : "Who is the terrorist?",
+                "secondCardDesc" : "You can find out the truth about who the terrorist is here",
+                "thirdCardHead" : "History of the Palestinian-Israeli conflict.",
+                "thirdCardDesc" : "Here you can discover the history of the Palestinian-Israeli conflict."
+            }]
+      }
+    ]
+  }

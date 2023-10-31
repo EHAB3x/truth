@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Landing.css'
 import news from '../../../Images/news.jfif'
 import {Button} from "@nextui-org/react";
 import  {Link}  from 'react-router-dom';
+import { useSelector } from 'react-redux';
 const Landing = () => {
-  return (
-    <div className='landing'>
+    const landingText = useSelector(state => state.Languages.landing[0]);
+    console.log(landingText);
+    if(landingText === undefined){
+        return <h1>Loading...</h1>
+    }else{
+        return (
+            <div className='landing'>
         <div className="left">
-            <h1>Welcome To <span>TRUTH</span> Website</h1>
-            <p>Here you can find the all truth about palestine & israel war.</p>
+            <h1>{landingText.title}</h1>
+            <p>{landingText.titleDesc}</p>
             <Button as='a' href='#' color="success">
-                Show More Articles
+                {landingText.button}
             </Button>
         </div>
 
@@ -21,8 +27,8 @@ const Landing = () => {
                 </div>
 
                 <div className="right">
-                    <h3>Who is the occupier?</h3>
-                    <p>This is an image.</p>
+                    <h3>{landingText.firstCardHead}</h3>
+                    <p>{landingText.firstCardDesc}</p>
                 </div>
             </Link>
 
@@ -32,8 +38,8 @@ const Landing = () => {
                 </div>
 
                 <div className="right">
-                    <h3>Who is the terrorist?</h3>
-                    <p>This is an image.</p>
+                    <h3>{landingText.secondCardHead}</h3>
+                    <p>{landingText.secondCardDesc}</p>
                 </div>
             </Link>
 
@@ -43,13 +49,15 @@ const Landing = () => {
                 </div>
 
                 <div className="right">
-                    <h3>History of the Palestinian-Israeli conflict.</h3>
-                    <p>This is an image.</p>
+                    <h3>{landingText.thirdCardHead}</h3>
+                    <p>{landingText.thirdCardDesc}</p>
                 </div>
             </Link>
         </div>
     </div>
-  )
+          )
+    }
+  
 }
 
 export default Landing
